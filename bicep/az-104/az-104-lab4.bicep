@@ -1,7 +1,7 @@
 param location string = 'australiaeast'
 param resourceGroupName string = 'az104-rg5'
 
-module coreServicesVnet 'vnet.bicep' = {
+module coreServicesVnet '../modules/vnet.bicep' = {
   name: 'coreServicesVnetDeployment'
   params: {
     vnetName: 'CoreServicesVnet'
@@ -20,7 +20,7 @@ module coreServicesVnet 'vnet.bicep' = {
   }
 }
 
-module manufacturingVnet 'vnet.bicep' = {
+module manufacturingVnet '../modules/vnet.bicep' = {
   name: 'manufacturingVnetDeployment'
   params: {
     vnetName: 'ManufacturingVnet'

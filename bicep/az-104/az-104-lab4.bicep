@@ -1,4 +1,4 @@
-param location string = 'australiaeast'
+param location string = 'australiasoutheast'
 param resourceGroupName string = 'az104-rg5'
 
 module coreServicesVnet '../modules/vnet.bicep' = {
